@@ -1,5 +1,6 @@
 public class Sample {
     public static void main(String[] args){
+
 //        LinkedList list = new LinkedList();
 //        list.insertAtBeg(2);
 //        list.insertAtBeg(3);
@@ -34,17 +35,16 @@ public class Sample {
 //        lst.display();
 //        System.out.println();
 //        lst.displayRev();
+//
 
-        CircularList lst = new CircularList();
-        lst.insertAtBeg(10);
-        lst.insertAtBeg(99);
-        lst.insertEnd(120);
-        lst.insertAtBeg(56);
-        lst.insertAtBeg(33);
-        lst.insertEnd(1);
-        lst.deleteAtBeg();
-        lst.deleteAtEnd();
-        lst.display();
+        ArrayStack st = new ArrayStack();
+        st.push(3);
+        st.peek();
+        st.push(67);
+        st.peek();
+        int p =  st.pop();
+        System.out.println("Pop "+ p);
+        st.peek();
 
     }
 }
