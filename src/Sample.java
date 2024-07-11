@@ -37,14 +37,24 @@ public class Sample {
 //        lst.displayRev();
 //
 
-        ArrayStack st = new ArrayStack();
-        st.push(3);
-        st.peek();
-        st.push(67);
-        st.peek();
-        int p =  st.pop();
-        System.out.println("Pop "+ p);
-        st.peek();
+//        //Stack Array Implementation
+//        ArrayStack st = new ArrayStack();
+//        st.push(3);
+//        st.peek();
+//        st.push(67);
+//        st.peek();
+//        int p =  st.pop();
+//        System.out.println("Pop "+ p);
+//        st.peek();
+
+        StackLinkedList lst = new StackLinkedList();
+        lst.push(3);
+        lst.push(67);
+        lst.peek();
+        lst.pop();
+        lst.peek();
+        lst.pop();
+//        lst.peek();
 
     }
 }
