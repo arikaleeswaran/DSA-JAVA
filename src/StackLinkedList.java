@@ -13,6 +13,7 @@ public class StackLinkedList {
         top = null;
     }
 
+    //Insert at Beg and Delete at Beg
     public void push(int val){
         Node newNode = new Node(val);
         newNode.next = top;
