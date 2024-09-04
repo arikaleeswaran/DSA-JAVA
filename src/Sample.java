@@ -47,14 +47,25 @@ public class Sample {
 //        System.out.println("Pop "+ p);
 //        st.peek();
 
-        StackLinkedList lst = new StackLinkedList();
-        lst.push(3);
-        lst.push(67);
-        lst.peek();
-        lst.pop();
-        lst.peek();
-        lst.pop();
+//        StackLinkedList lst = new StackLinkedList();
+//        lst.push(3);
+//        lst.push(67);
 //        lst.peek();
+//        lst.pop();
+//        lst.peek();
+//        lst.pop();
+////        lst.peek();
+
+        QueueArray sam = new QueueArray();
+        sam.enqueue(8);
+        sam.enqueue(34);
+        sam.enqueue(4656);
+        sam.enqueue(78);
+        System.out.println(sam.dequeue());
+        System.out.println(sam.dequeue());
+        System.out.println(sam.dequeue());
+        System.out.println(sam.dequeue());
+        System.out.println(sam.dequeue());
 
     }
 }
