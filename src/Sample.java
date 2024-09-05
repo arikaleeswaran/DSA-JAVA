@@ -56,16 +56,29 @@ public class Sample {
 //        lst.pop();
 ////        lst.peek();
 
-        QueueArray sam = new QueueArray();
-        sam.enqueue(8);
-        sam.enqueue(34);
-        sam.enqueue(4656);
-        sam.enqueue(78);
-        System.out.println(sam.dequeue());
-        System.out.println(sam.dequeue());
-        System.out.println(sam.dequeue());
-        System.out.println(sam.dequeue());
-        System.out.println(sam.dequeue());
+//       --> Queue Implementation using Array
+//        QueueArray2 sam = new QueueArray2();
+//        sam.enqueue(8);
+//        sam.enqueue(34);
+//        sam.enqueue(4656);
+//        sam.enqueue(78);
+//        System.out.println(sam.dequeue());
+//        System.out.println(sam.dequeue());
+//        System.out.println(sam.dequeue());
+//        System.out.println(sam.dequeue());
+//        System.out.println(sam.dequeue());
+
+//        -->Queue Implementation Using LinkedList
+        QueueLinkedList q = new QueueLinkedList();
+        q.enqueue(45);
+        q.enqueue(16513);
+        q.enqueue(852);
+        System.out.println(q.dequeue());
+        System.out.println(q.dequeue());
+        System.out.println(q.dequeue());
+//        System.out.println(q.dequeue());
+        System.out.println(q.isEmpty());
+        System.out.println(q.atFront());
 
     }
 }
