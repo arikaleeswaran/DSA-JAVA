@@ -75,7 +75,7 @@ public class Sample {
         q.enqueue(852);
         System.out.println(q.dequeue());
         System.out.println(q.dequeue());
-        System.out.println(q.dequeue());
+//        System.out.println(q.dequeue());
 //        System.out.println(q.dequeue());
         System.out.println(q.isEmpty());
         System.out.println(q.atFront());
