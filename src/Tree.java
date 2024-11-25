@@ -21,12 +21,18 @@ public class Tree {
         bst.insert(bst.root,5);
         bst.insert(40);
         bst.insert(2);
+        bst.insertLoop(bst.root, 1);
 
         bst.inOrder(bst.root);
         System.out.println();
 
         if(bst.search(bst.root,120) == null){
             System.out.println("The element " + 120 + " was not found");
+        }else{
+            System.out.println("The Element " +120 + " was found");
+        }
+        if(bst.searchLoop(12)){
+            System.out.println("The element " + 12 + " was not found");
         }else{
             System.out.println("The Element " +120 + " was found");
         }
