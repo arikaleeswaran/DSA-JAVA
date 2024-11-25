@@ -23,5 +23,12 @@ public class Tree {
         bst.insert(2);
 
         bst.inOrder(bst.root);
+        System.out.println();
+
+        if(bst.search(bst.root,120) == null){
+            System.out.println("The element " + 120 + " was not found");
+        }else{
+            System.out.println("The Element " +120 + " was found");
+        }
     }
 }

@@ -41,4 +41,15 @@ public class BinarySearchTree {
             inOrder(root.right);
         }
     }
+
+    public Node search(Node root,int val){
+        if(root == null || root.key == val) {
+            return root;
+        }
+
+        if(val< root.key) {
+            return search(root.left, val);
+        }
+        return search(root.right,val);
+    }
 }
