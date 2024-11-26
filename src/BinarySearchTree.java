@@ -1,3 +1,5 @@
+import com.sun.source.tree.BreakTree;
+
 public class BinarySearchTree {
     Node root;
     class Node{
@@ -81,5 +83,34 @@ public class BinarySearchTree {
             else cur = cur.right;
         }
         return true;
+    }
+
+    public Node delete(Node root, int val){
+
+        if(root == null){
+            return root;
+        }
+        if(val< root.key){
+            root.left = delete(root.left,val);
+        }else if(val> root.key) {
+            root.right = delete(root.right, val);
+        }else{
+            if(root.right == null){
+                return root.left;
+            }else if(root.left == null){
+                return root.right;
+            }
+            root.key = min(root.right);
+            root.right = delete(root.right,root.key);
+        }
+        return root;
+    }
+    public int min(Node root){
+        int minV = root.key;
+        while (root != null){
+            minV = root.key;;
+            root = root.left;
+        }
+        return minV;
     }
 }

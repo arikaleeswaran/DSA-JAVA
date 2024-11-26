@@ -36,5 +36,8 @@ public class Tree {
         }else{
             System.out.println("The Element " +120 + " was found");
         }
+
+        bst.delete(bst.root, 10);
+        bst.inOrder(bst.root);
     }
 }
